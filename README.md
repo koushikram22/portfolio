@@ -3,7 +3,8 @@
 ### 👨‍💻 About This Portfolio
 
 <p align="left">
-This repository contains the source code for my personal portfolio website, designed to showcase my projects, technical skills, achievements, and experience as a Software Developer through a clean and modern interface. It highlights my work in full-stack development, AI-driven applications, and modern web technologies.
+### 👨‍💻 About This Portfolio
+This repository contains the source code for my personal portfolio website, showcasing my projects, technical skills, achievements, and experience as a Software Developer through a clean and modern interface. It highlights my work in full-stack development, AI-driven applications, and modern web technologies.
 </p>
 
 ---
