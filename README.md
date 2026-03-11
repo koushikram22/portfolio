@@ -59,6 +59,10 @@ Deployed on <b>Vercel</b>.
   <a href="mailto:ram404844@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=flat"/>
   </a>
+
+  <a href="https://github.com/koushikram22" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white"/>
+  </a>
 </p>
 
 ---
