@@ -44,7 +44,7 @@ This repository contains the source code for my personal portfolio website, desi
 ### 📦 Deployment
 
 <p align="left">
-This portfolio website is deployed on <b>Vercel</b>.
+Deployed on <b>Vercel</b>.
 </p>
 
 ---
