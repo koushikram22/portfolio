@@ -11,7 +11,7 @@ The portfolio showcases my projects, technical skills, achievements, and experie
 
 <p align="left">
 <a href="https://koushikram-portfolio.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-Visit Website-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </a>
 </p>
 
