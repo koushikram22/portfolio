@@ -175,22 +175,35 @@ function App() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simulate sending
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const response = await fetch("https://formspree.io/f/xkoqqzgd", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify(formData)
+  });
+
+  if (response.ok) {
+    setIsSubmitted(true);
+    setShowToast(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    });
+
     setTimeout(() => {
-      setIsSubmitted(true);
-      setShowToast(true);
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' });
-      
-      setTimeout(() => {
-        setShowToast(false);
-      }, 2800);
-    }, 600);
-  };
+      setShowToast(false);
+    }, 2800);
+  } else {
+    alert("Failed to send message.");
+  }
+};
 
   const downloadResume = () => {
     const resumeContent = `
