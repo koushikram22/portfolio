@@ -226,41 +226,16 @@ function App() {
 };
 
   const downloadResume = () => {
-    const resumeContent = `
-Koushik Ram Addagarla
-Software Developer | Full Stack Developer
-Hyderabad, India | ram404844@gmail.com
+  const link = document.createElement("a");
+  link.href = "/resume.pdf";
+  link.download = "Koushik_Ram_Addagarla_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 
-EDUCATION
-B.Tech Computer Science, MLR Institute of Technology, Hyderabad
-
-EXPERIENCE
-• Built multiple full-stack applications with modern technologies
-• Developed OCR healthcare solution recognized in national hackathon
-• Created educational platform used by 1000+ students
-
-SKILLS
-Java • JavaScript • React • Tailwind • Node.js • SQL • Git
-
-ACHIEVEMENTS
-• 2nd Place - Code Verse 2025
-• Shortlisted - ThinkQbator 2024
-    `.trim();
-
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = "/koushik-resume.pdf";
-    link.download = 'Koushik_Ram_Addagarla_Resume..pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-
-    // Show toast
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2200);
-  };
+  setShowToast(true);
+  setTimeout(() => setShowToast(false), 2200);
+};
 
   const navLinks = [
     { label: 'Home', id: 'home' },
