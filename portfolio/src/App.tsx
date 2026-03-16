@@ -250,7 +250,7 @@ ACHIEVEMENTS
     const blob = new Blob([resumeContent], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = "/resume.pdf";
+    link.href = "/koushik-resume.pdf";
     link.download = 'Koushik_Ram_Addagarla_Resume..pdf';
     document.body.appendChild(link);
     link.click();
