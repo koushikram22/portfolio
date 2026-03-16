@@ -88,10 +88,30 @@ const achievements = [
 ];
 
 const certifications = [
-  { name: "Google Cloud Computing", org: "NPTEL", icon: "☁️" },
-  { name: "Artificial Intelligence", org: "Infosys Springboard", icon: "🤖" },
-  { name: "Java Programming", org: "IBM SkillsBuild", icon: "☕" },
-  { name: "JavaScript Mastery", org: "IBM SkillsBuild", icon: "🟨" }
+  { 
+    name: "Cloud Computing", 
+    org: "NPTEL", 
+    icon: "☁️",
+    link: "/certificates/cloud-computing.pdf"
+  },
+  { 
+    name: "Artificial Intelligence", 
+    org: "Infosys Springboard", 
+    icon: "🤖",
+    link: "/certificates/ai.pdf"
+  },
+  { 
+    name: "Java Programming", 
+    org: "IBM SkillsBuild", 
+    icon: "☕",
+    link: "/certificates/java.pdf"
+  },
+  { 
+    name: "JavaScript Mastery", 
+    org: "IBM SkillsBuild", 
+    icon: "🟨",
+    link: "/certificates/javascript.pdf"
+  }
 ];
 
 const ParticleBackground: React.FC = () => {
@@ -614,22 +634,32 @@ ACHIEVEMENTS
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {certifications.map((cert, index) => (
-            <motion.div 
-              key={index}
-              initial={{ opacity: 0, scale: 0.88 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.07 }}
-              whileHover={{ y: -10, transition: { duration: 0.2 } }}
-              className="glass p-9 rounded-3xl group flex flex-col justify-between min-h-[260px] hover:border-[#00E5FF]/40 cursor-pointer"
-            >
-              <div className="text-6xl mb-7 transition group-hover:scale-110">{cert.icon}</div>
-              <div>
-                <div className="font-semibold text-2xl tracking-tight">{cert.name}</div>
-                <div className="text-sm text-white/60 mt-1 tracking-wider">{cert.org}</div>
-              </div>
-            </motion.div>
-          ))}
+  <motion.a
+    key={index}
+    href={cert.link}
+    target="_blank"
+    initial={{ opacity: 0, scale: 0.88 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.07 }}
+    whileHover={{ y: -10, transition: { duration: 0.2 } }}
+    className="glass p-9 rounded-3xl group flex flex-col justify-between min-h-[260px] hover:border-[#00E5FF]/40 cursor-pointer"
+  >
+    <div className="text-6xl mb-7 transition group-hover:scale-110">
+      {cert.icon}
+    </div>
+
+    <div>
+      <div className="font-semibold text-2xl tracking-tight">
+        {cert.name}
+      </div>
+
+      <div className="text-sm text-white/60 mt-1 tracking-wider">
+        {cert.org}
+      </div>
+    </div>
+  </motion.a>
+))}
         </div>
       </section>
 
