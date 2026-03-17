@@ -11,7 +11,6 @@ interface Project {
   description: string;
   image: string;
   tech: string[];
-  github: string;
   demo: string;
 }
 
@@ -28,7 +27,6 @@ const projects: Project[] = [
     description: "Healthcare platform with OCR prescription detection using Tesseract.js, PHP, and MySQL. Revolutionizing medical record management.",
     image: "/images/curecraft.jpg",
     tech: ["Tesseract.js", "PHP", "MySQL", "Tailwind"],
-    github: "https://github.com",
     demo: "#"
   },
   {
@@ -37,7 +35,6 @@ const projects: Project[] = [
     description: "Comprehensive educational platform featuring mock tests, academic resources, and community features for engineering students.",
     image: "/images/backbenchers.jpg",
     tech: ["React", "Node.js", "MongoDB", "Tailwind"],
-    github: "https://github.com",
     demo: "#"
   },
   {
@@ -45,9 +42,8 @@ const projects: Project[] = [
     title: "The Shoe Company",
     description: "Premium responsive e-commerce website for a luxury shoe brand with immersive product experiences and smooth animations.",
     image: "/images/shoecompany.jpg",
-    tech: ["HTML5", "Tailwind CSS", "JavaScript", "GSAP"],
-    github: "https://github.com",
-    demo: "#"
+    tech: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
+    demo: "https://kr-shoe-company.vercel.app"
   }
 ];
 
@@ -545,20 +541,13 @@ function App() {
 
                 <div className="mt-auto pt-12 flex gap-4">
                   <motion.a 
-                    href={project.github} 
-                    target="_blank"
-                    className="flex-1 border border-white/30 hover:border-white flex items-center justify-center gap-3 py-4 rounded-2xl text-sm transition-all"
-                    whileHover={{ backgroundColor: 'rgba(255,255,255,0.035)' }}
-                  >
-                    <Github size={17} /> CODE
-                  </motion.a>
-                  <motion.a 
                     href={project.demo} 
                     target="_blank"
+                    rel="noopener noreferrer"
                     onClick={(e) => { if (project.demo === '#') e.preventDefault(); }}
-                    className="flex-1 bg-white hover:bg-white/90 text-black flex items-center justify-center gap-3 py-4 rounded-2xl text-sm transition-all"
-                    whileHover={{ scale: 1.01 }}
-                  >
+                    className="flex-1 bg-white hover:bg-white/90 text-black flex items-center justify-center gap-3 py-4 rounded-2xl text-sm font-medium transition-all"
+                    whileHover={{ scale: 1.03 }}
+>
                     LIVE DEMO <ExternalLink size={17} />
                   </motion.a>
                 </div>
