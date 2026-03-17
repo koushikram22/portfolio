@@ -10,8 +10,8 @@ This repository contains the source code for my personal portfolio website, show
 
 ### 🚀 Live Website
 
-<a href="https://koushikram-portfolio.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Visit%20Portfolio-000000?style=for-the-badge"/>
+<a href="https://koushikram-portfolio.vercel.app" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Visit%20Portfolio-000000?style=for-the-badge" alt="Visit Portfolio"/>
 </a>
 
 ---
