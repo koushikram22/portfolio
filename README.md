@@ -64,5 +64,3 @@ Deployed on <b>Vercel</b>.
     <img src="https://img.shields.io/badge/Gmail-D14836?style=flat"/>
   </a>
 </p>
-
----
