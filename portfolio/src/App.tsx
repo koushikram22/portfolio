@@ -41,7 +41,7 @@ const projects: Project[] = [
     id: 3,
     title: "The Shoe Company",
     description: "Premium responsive e-commerce website for a luxury shoe brand with immersive product experiences and smooth animations.",
-    image: "/images/shoecompany.jpg",
+    image: "/images/shoecompany.png",
     tech: ["React", "Tailwind CSS", "JavaScript", "Framer Motion"],
     demo: "https://kr-shoe-company.vercel.app"
   }
