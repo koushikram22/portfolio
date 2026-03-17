@@ -519,7 +519,7 @@ function App() {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" 
+                  className="w-full h-full object-cover object-left transition-all duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
               </div>
@@ -545,11 +545,11 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => { if (project.demo === '#') e.preventDefault(); }}
-                    className="flex-1 bg-white hover:bg-white/90 text-black flex items-center justify-center gap-3 py-4 rounded-2xl text-sm font-medium transition-all"
-                    whileHover={{ scale: 1.03 }}
+                    className="px-8 py-3 bg-white hover:bg-white/90 text-black flex items-center justify-center gap-3 rounded-xl text-sm font-medium transition-all w-fit"
+                    whileHover={{ scale: 1.05 }}
 >
-                    LIVE DEMO <ExternalLink size={17} />
-                  </motion.a>
+                    LIVE DEMO <ExternalLink size={14} />
+                    </motion.a>
                 </div>
               </div>
             </motion.div>
