@@ -52,11 +52,7 @@ Deployed on <b>Vercel</b>.
 ### 🔗 Connect With Me
 
 <p align="left">
-  <a href="https://github.com/koushikram22">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
-  </a>
-
-  <a href="https://www.linkedin.com/in/koushik-ram-addagarla/">
+   <a href="https://www.linkedin.com/in/koushik-ram-addagarla/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
   </a>
 
